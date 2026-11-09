@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g>
+    <rect x="10" y="10" width="80" height="80" rx="18" fill="#07111f"/>
+    <text x="50" y="68" font-family="monospace" font-size="42" font-weight="bold" fill="#22c55e" text-anchor="middle">CS</text>
+    <animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+  </g>
+</svg>

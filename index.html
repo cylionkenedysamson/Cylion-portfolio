@@ -187,7 +187,7 @@
                         <div><small>CISCO NETWORKING ACADEMY · OCT 13, 2026</small><h4>Networking Devices and Basic Configuration</h4></div>
                     </article>
                     <article class="certificate-card add-cert" id="addCertCard">
-                        <button type="button" class="add-cert-btn" data-lock-target="certifications"><div class="plus">+</div><div><small>FUTURE CERTIFICATE</small><h4>Add next certification</h4><small style="display:block;margin-top:6px">🔒 Key required</small></div></button>
+                        <button type="button" class="add-cert-btn" data-lock-target="certifications"><div class="plus">+</div><div><small>FUTURE CERTIFICATE</small><h4>Add next certification</h4><small style="display:block;margin-top:6px">🔒 Password required</small></div></button>
                     </article>
                 </div>
                 <input type="file" id="certFileInput" hidden accept=".png,.jpg,.jpeg">
@@ -210,7 +210,7 @@
                     </article>
                     <article class="planner-card"><small>COURSERA / ISC2</small><h3>Security Operations</h3><p>In progress</p><div class="progress-track"><span></span></div><p class="storage-note">I will update my course progress as i progress.</p></article>
                 </div>
-                <div class="planner-card file-planner"><small>MY STUDY FILES</small><h3>Academic materials</h3><p>Upload files into categories below. 🔒 Key required to add.</p>
+                <div class="planner-card file-planner"><small>MY STUDY FILES</small><h3>Academic materials</h3><p>Upload files into categories below. 🔒 Password required to add.</p>
                     <div class="upload-grid">
                         <section class="upload-category" data-category="assessment"><h4>Assessment files</h4><button type="button" class="upload-button add-files-btn" data-lock-target="assessment">Add files</button><input class="file-input" type="file" data-category="assessment" multiple hidden><ul class="stored-files" data-list="assessment"><li>No files added yet.</li></ul></section>
                         <section class="upload-category" data-category="assessment-result"><h4>Assessment results</h4><button type="button" class="upload-button add-files-btn" data-lock-target="assessment-result">Add files</button><input class="file-input" type="file" data-category="assessment-result" multiple hidden><ul class="stored-files" data-list="assessment-result"><li>No files added yet.</li></ul></section>
@@ -222,7 +222,7 @@
                     <h3>Timetable and reminders</h3>
                     <p>Add an activity and start time. 10 hours before the deadline, the reminder pops up at the top.</p>
                     <button type="button" class="btn-add add-timetable-btn" onclick="openLogin('timetable')">+ Add to timetable</button>
-                    <p>🔒 Key required to add. Click button above.</p>
+                    <p>🔒 Password required to add. Click button above.</p>
                     <form id="event-form" class="event-form-hidden">
                         <label>Activity
                             <input name="activity" type="text" placeholder="e.g. Study Maths" required>
@@ -240,7 +240,7 @@
                         </label>
                         <button class="button button-primary" type="submit">Add to timetable</button>
                     </form>
-                    <p id="timetable-lock-note" style="color:#facc15; font-size:13px;">🔒 Key required to add. Click button above.</p>
+                    <p id="timetable-lock-note" style="color:#facc15; font-size:13px;">🔒 Password requiredp to add. Click button above.</p>
                     <div class="table-wrap"><table class="event-table"><thead><tr><th>Activity</th><th>Starts</th><th>Reminder details</th><th></th></tr></thead><tbody id="event-list"><tr><td colspan="4">No activities scheduled yet.</td></tr></tbody></table></div>
                     <p class="storage-note">Timetable entries are stored here. The ticker appears only while this website is open.</p>
                 </div>
@@ -255,7 +255,7 @@
             <p style="text-align:center; max-width:600px; margin:0 auto; color:#a2b2bf;">Open to connecting with cybersecurity professionals, fellow learners, and people working to make systems safer.</p>
         </div>
 
-        <!-- BOTTOM - LEFT + RIGHT SIDE BY SIDE - SAME WIDTH AS TOP -->
+        <!-- BOTTOM - LEFT + contact information to the right side -->
         <div class="contact-grid">
 
             <!-- LEFT - CONTACT INFO -->
@@ -316,10 +316,10 @@
         <div class="login-box" role="dialog" aria-modal="true">
             <button type="button" class="login-close" id="loginClose">✕</button>
             <div class="login-icon">🔒</div>
-            <h3>Owner Key Required</h3>
-            <p id="loginTargetText">Enter key to unlock this folder.</p>
-            <input type="password" id="ownerKeyInput" placeholder="Enter your key" autocomplete="off">
-            <p id="loginError" class="login-error" hidden>Wrong key. Try again.</p>
+            <h3>Owner Password Required</h3>
+            <p id="loginTargetText">Enter Password to unluck this folder.</p>
+            <input type="password" id="ownerKeyInput" placeholder="Enter your Password" autocomplete="off">
+            <p id="loginError" class="login-error" hidden>Wrong password. Try again.</p>
             <button type="button" class="button button-primary login-unlock-btn" id="loginUnlockBtn">Unlock Folder</button>
             <small>Visitors can view only. Only the owner can add.</small>
         </div>

@@ -1,6 +1,6 @@
 // ===== CYLION PORTFOLIO - SECURITY + PLANNER + TICKER =====
-// CHANGE YOUR KEY HERE - this one key unlocks all folders
-const OWNER_KEY = "Car123los";
+// CHANGE YOUR PASSWORD HERE - this one key unlocks all folders
+const OWNER_PASSWORD = "Car123los";
 
 let pendingTarget = null;
 let unlocked = new Set(); // FIX: was missing, caused crash
@@ -15,7 +15,7 @@ function openLogin(target, targetLabel, anchorEl) {
   pendingTarget = target;
   // FIX: if button only passes 1 arg like openLogin('timetable'), make a nice label
   const label = targetLabel || (target === 'timetable' ? 'Timetable' : target);
-  if (loginTargetText) loginTargetText.textContent = `Enter key to unlock: ${label}`;
+  if (loginTargetText) loginTargetText.textContent = `Enter password to unlock: ${label}`;
   if (loginError) loginError.hidden = true;
   if (keyInput) keyInput.value = "";
   if (loginModal) loginModal.hidden = false;
@@ -41,7 +41,7 @@ function showTimetableForm() {
 }
 
 function tryUnlock() {
-  if (keyInput.value === OWNER_KEY) {
+  if (keyInput.value === OWNER_PASSWORD) {
     const target = pendingTarget; // FIX: save BEFORE closing
     unlocked.add(target);
     if (loginModal) loginModal.hidden = true;
